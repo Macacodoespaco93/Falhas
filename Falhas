@@ -1,0 +1,8 @@
+void verify_sorting(Image* arr, int n) {
+    for (int i = 1; i < n; i++) {
+        if (arr[i].size < arr[i-1].size) {
+            fprintf(stderr, "Erro: Array não está corretamente ordenado!\n");
+            exit(1);
+        }
+    }
+}
